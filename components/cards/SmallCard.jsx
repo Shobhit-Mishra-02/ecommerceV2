@@ -1,12 +1,20 @@
 import "./smallCard.css";
 
-/*
-So brother your task is to create a small card as discussed.
-you can edit this file in order to develop a nice card and it has an attached css file smallCard.css
-*/
 
 const SmallCard = () => {
-  return <div className="heading">small card by tushar, nice work</div>;
+  return (
+    <div className="smallCard">
+
+      <div className="smallCardImg">
+        <img src="#" alt="smallCardImg"/>
+      </div>
+
+      <div className="smallCardAbout">
+        <div className="smallCardCost">$10.00</div>
+        <div className="smallCardDescription">T-shirts with multiple colors, for men</div>
+      </div>
+    </div>
+  )
 };
 
 export default SmallCard;
