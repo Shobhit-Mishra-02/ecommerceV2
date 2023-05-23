@@ -6,7 +6,7 @@ you can edit this file in order to develop a nice card and it has an attached cs
 */
 
 const SmallCard = () => {
-  return <div className="heading">small card</div>;
+  return <div className="heading">small card by tushar</div>;
 };
 
 export default SmallCard;
