@@ -1,3 +1,41 @@
-.heading {
-  color: red;
+.smallCard *{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.smallCard{
+  border: 1px solid red;
+  margin: 5px;
+  width: 15vw;
+  height: 45vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 45vh;
+  overflow: hidden;
+}
+.smallCardImg{
+  border: 1px solid black;
+  width: 12vw;
+  height: 15vw;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+.smallCardImg>img{
+  width: 10vw;
+  aspect-ratio: 1/1;
+}
+
+.smallCardAbout{
+  margin-left: 1.5vw;
+}
+.smallCardCost{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.smallCardDescription{
+  color: #8B96A5;
 }
