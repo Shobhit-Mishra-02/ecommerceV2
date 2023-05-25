@@ -1,10 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
 import "./smallCard.css";
+import Image from "next/image";
 
 const SmallCard = () => {
   return (
     <div className="smallCard">
-      <img className="smallCardImg" src="/tShirt.png" alt="smallCardImg" />
+      <Image
+        className="smallCardImg"
+        src="/tShirt.png"
+        width={500}
+        height={500}
+        alt="smallCardImg"
+      />
       <div className="smallCardAbout">
         <div className="smallCardCost">$10.00</div>
         <div className="smallCardDescription">

@@ -1,20 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { AiOutlineHeart } from "react-icons/ai";
 import {
+  FiArchive,
+  FiHeart,
+  FiHome,
+  FiList,
   FiMenu,
+  FiMessageSquare,
+  FiSearch,
   FiShoppingCart,
   FiUser,
   FiX,
-  FiHome,
-  FiArchive,
-  FiHeart,
-  FiList,
-  FiMessageSquare,
-  FiSearch,
 } from "react-icons/fi";
-import { MdOutlineMessage } from "react-icons/md";
 import "./navigation.css";
 
 const SliderOptions = ({ toogleSlider }) => (
