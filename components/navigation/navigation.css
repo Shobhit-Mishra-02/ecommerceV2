@@ -1,6 +1,8 @@
 .navbar {
   padding: 1rem 0.4rem;
-  border-bottom: 1px solid var(--gray-400);
+  border-bottom: 1px solid var(--gray-300);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  background-color: white;
 }
 
 .navbar_options {
@@ -13,7 +15,12 @@
 .navbar_options svg {
   height: auto;
   width: 1.8rem;
+  stroke: var(--gray-600);
   cursor: pointer;
+}
+
+.navbar_options svg:hover {
+  stroke: var(--gray-500);
 }
 
 .navbar_options__left,
@@ -27,16 +34,33 @@
 
 .navbar_options__left span {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--gray-600);
+}
+
+.navbar_search {
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  top: 26px;
+  left: 12px;
+  height: auto;
+  width: 1.4rem;
+  stroke: var(--gray-500);
 }
 
 .navbar_search input {
   width: 100%;
   margin-top: 1rem;
-  font-size: 1rem;
-  padding: 0.4rem 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.6rem;
   border: 1px solid var(--gray-400);
   border-radius: 5px;
+  color: var(--gray-600);
+  padding-left: 3rem;
 }
 
 .navbar_search__big input {
@@ -66,7 +90,7 @@
 .slider_login {
   width: 100%;
   background-color: var(--gray-200);
-  padding: 1.2rem 1rem;
+  padding: 1.2rem;
 }
 
 .slider_cross {
@@ -79,14 +103,28 @@
 .slider_cross svg {
   margin-right: 2.8rem;
   height: auto;
-  width: 1.5rem;
+  width: 1.8rem;
+  stroke: var(--gray-600);
   cursor: pointer;
+}
+
+.slider_cross svg:hover {
+  stroke: var(--gray-500);
 }
 
 .slider_login img {
   height: auto;
-  width: 3rem;
+  width: 3.2rem;
   margin-bottom: 0.6rem;
+}
+
+.slider_login__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .slider_middle,
@@ -98,19 +136,47 @@
 
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
-  padding-top: 1.2rem;
-  padding-bottom: 0.4rem;
-  margin: 0rem 0.7rem;
+  row-gap: 0.2rem;
+  padding-top: 1.4rem;
+  margin: 0rem 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.slider_last {
+  row-gap: 0.8rem;
 }
 
 .slider_middle {
   border-bottom: 1px solid var(--gray-300);
 }
 
+.slider_middle__option svg {
+  height: auto;
+  width: 1.5rem;
+}
+
+.slider_middle__option {
+  color: var(--gray-600);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  padding: 0.4rem 0.2rem;
+  border-radius: 5px;
+}
+
+.slider_middle__option:hover {
+  background-color: var(--gray-100);
+}
+
 .slider_middle__option,
 .slider_last__option {
   cursor: pointer;
+}
+
+.slider_last__option {
+  padding-left: 2rem;
+  color: var(--gray-600);
 }
 
 .slide_out {
@@ -127,6 +193,25 @@
 
 .navbar_search__big {
   display: none;
+}
+
+.navbar_right__link span {
+  display: none;
+}
+
+.navbar_right__link {
+  stroke: var(--gray-600);
+  color: var(--gray-600);
+  cursor: pointer;
+}
+
+.navbar_right__link:hover {
+  stroke: var(--gray-500);
+  color: var(--gray-500);
+}
+
+.navbar_right__link svg {
+  stroke: inherit;
 }
 
 /* responsive design  */
@@ -154,17 +239,50 @@
   .navbar {
     padding: 1rem 2rem;
   }
+  .navbar_right__link span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .navbar_right__link svg {
+    width: 1.4rem;
+  }
+
+  .navbar_options__right {
+    gap: 1.6rem;
+  }
+
+  .navbar_right__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .navbar {
     padding: 1rem 6rem;
   }
+  .navbar_search__big input {
+    width: 500px;
+  }
 }
 
 @media (min-width: 1280px) {
   .navbar {
     padding: 1rem 8rem;
+  }
+
+  .navbar_search__big input {
+    width: 500px;
+  }
+
+  .navbar_options__right {
+    gap: 2rem;
   }
 }
 

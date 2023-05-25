@@ -1,12 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { BiMenu } from "react-icons/bi";
-import { BsPerson } from "react-icons/bs";
-import { FiX } from "react-icons/fi";
-import { GrCart } from "react-icons/gr";
-import { MdOutlineMessage } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
+import {
+  FiMenu,
+  FiShoppingCart,
+  FiUser,
+  FiX,
+  FiHome,
+  FiArchive,
+  FiHeart,
+  FiList,
+  FiMessageSquare,
+  FiSearch,
+} from "react-icons/fi";
+import { MdOutlineMessage } from "react-icons/md";
 import "./navigation.css";
 
 const SliderOptions = ({ toogleSlider }) => (
@@ -16,13 +24,27 @@ const SliderOptions = ({ toogleSlider }) => (
         <FiX onClick={toogleSlider} />
       </div>
       <img src="/Avatar.png" alt="avatar" />
-      <div>Sign in | Register</div>
+      <div>
+        <button className="slider_login__btn">Sign in | Register</button>
+      </div>
     </div>
     <div className="slider_middle">
-      <div className="slider_middle__option">Home</div>
-      <div className="slider_middle__option">Categories</div>
-      <div className="slider_middle__option">Favorites</div>
-      <div className="slider_middle__option">My orders</div>
+      <div className="slider_middle__option">
+        <FiHome />
+        <span>Home</span>
+      </div>
+      <div className="slider_middle__option">
+        <FiList />
+        <span>Categories</span>
+      </div>
+      <div className="slider_middle__option">
+        <FiHeart />
+        <span>Favorites</span>
+      </div>
+      <div className="slider_middle__option">
+        <FiArchive />
+        <span>My orders</span>
+      </div>
     </div>
     <div className="slider_last">
       <div className="slider_last__option">Contact us</div>
@@ -40,7 +62,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="navbar_options">
         <div className="navbar_options__left">
-          <BiMenu onClick={toogleSlider} />
+          <FiMenu onClick={toogleSlider} />
           <span>Brand</span>
         </div>
 
@@ -48,14 +70,29 @@ const Navigation = () => {
           <input type="search" placeholder="search" />
         </div>
         <div className="navbar_options__right">
-          <GrCart />
-          <BsPerson />
-          <MdOutlineMessage className="big_div__icon" />
-          <AiOutlineHeart className="big_div__icon" />
+          <span className="navbar_right__link">
+            <FiShoppingCart />
+            <span>Cart</span>
+          </span>
+          <span className="navbar_right__link">
+            <FiUser />
+            <span>Profile</span>
+          </span>
+
+          <span className="navbar_right__link big_div__icon">
+            <FiMessageSquare />
+            <span>Messages</span>
+          </span>
+
+          <span className="navbar_right__link big_div__icon">
+            <FiHeart />
+            <span>Orders</span>
+          </span>
         </div>
       </div>
       <div className="navbar_search">
         <input type="search" placeholder="search" />
+        <FiSearch className="search_icon" />
       </div>
 
       {/* slider menue  */}
