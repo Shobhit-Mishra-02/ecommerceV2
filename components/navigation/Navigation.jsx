@@ -1,12 +1,13 @@
 "use client";
 
-import "./navigation.css";
-import { BiMenu } from "react-icons/bi";
-import { GrCart } from "react-icons/gr";
-import { BsPerson } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { FiX } from "react-icons/fi";
 import { useState } from "react";
+import { BiMenu } from "react-icons/bi";
+import { BsPerson } from "react-icons/bs";
+import { FiX } from "react-icons/fi";
+import { GrCart } from "react-icons/gr";
+import { MdOutlineMessage } from "react-icons/md";
+import { AiOutlineHeart } from "react-icons/ai";
+import "./navigation.css";
 
 const SliderOptions = ({ toogleSlider }) => (
   <>
@@ -43,9 +44,14 @@ const Navigation = () => {
           <span>Brand</span>
         </div>
 
+        <div className="navbar_search__big">
+          <input type="search" placeholder="search" />
+        </div>
         <div className="navbar_options__right">
           <GrCart />
           <BsPerson />
+          <MdOutlineMessage className="big_div__icon" />
+          <AiOutlineHeart className="big_div__icon" />
         </div>
       </div>
       <div className="navbar_search">
