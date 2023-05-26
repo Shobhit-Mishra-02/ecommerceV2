@@ -85,6 +85,7 @@
   background-color: white;
   overflow-x: hidden;
   transition: all ease-in-out 0.6s;
+  z-index: 3;
 }
 
 .slider_login {
