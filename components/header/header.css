@@ -1,0 +1,161 @@
+.header {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header_banner {
+  background-image: url("/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+.header_banner__heading {
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+  max-width: 300px;
+}
+
+.header_banner__heading span {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header_banner__btn {
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+
+  border: 1px solid var(--gray-200);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.right_section {
+  padding: 0.4rem;
+  width: 180px;
+  display: none;
+}
+
+.right_login {
+  border: 1px solid var(--gray-200);
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.6rem;
+  background-color: #0d6dfd1b;
+  margin-bottom: 0.5rem;
+}
+
+.right_login__upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.right_login__upper h4 {
+  font-weight: 400;
+}
+
+.right_login__upper h4 span {
+  white-space: nowrap;
+}
+
+.right_section_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.right_btn__join {
+  padding: 6px 8px;
+  font-size: 1rem;
+  font-weight: 400;
+
+  border: 1px solid var(--gray-200);
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.right_btn__login {
+  padding: 6px 8px;
+  font-size: 1rem;
+  font-weight: 400;
+
+  border: 1px solid var(--gray-300);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.right_msg__orange,
+.right_msg__green {
+  color: white;
+  width: 100%;
+  padding: 2.6rem 0.6rem;
+  border-radius: 5px;
+}
+
+.right_msg__orange {
+  margin-bottom: 0.5rem;
+  background-color: var(--orange);
+}
+
+.right_msg__green {
+  background-color: #55bdc3;
+}
+
+.right_msg__orange h4,
+.right_msg__green h4 {
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .header_banner {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_banner {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header_banner {
+    padding: 8rem 4.6rem;
+    /* height: 100%; */
+    /* width: 100%; */
+  }
+  .header_banner__heading {
+    font-size: 2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .header_banner__btn {
+    padding: 8px 18px;
+  }
+  .right_section {
+    display: block;
+  }
+}
