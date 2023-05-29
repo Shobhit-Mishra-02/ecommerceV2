@@ -1,0 +1,163 @@
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  overflow-x: auto;
+
+  padding-bottom: 2rem;
+}
+
+.sale_clock {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.sale_clock__heading h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.sale_clock__heading h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+.clock_section {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.clock_section__item {
+  background-color: var(--gray-300);
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock_item__first,
+.clock_item__second {
+  color: var(--gray-600);
+}
+
+.clock_item__first {
+  font-weight: 600;
+}
+
+.clock_item__second {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.sale_cards {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sale_cards__window {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-direction: row;
+}
+
+.sale_card {
+  border: 1px solid var(--gray-300);
+  border-radius: 5px;
+  background-color: white;
+
+  height: auto;
+  width: 190px;
+  cursor: pointer;
+}
+
+.sale_card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.sale_card img {
+  height: auto;
+  width: 100%;
+}
+
+.sale_card h5 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+}
+
+.sale_card div {
+  padding-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale_card div span {
+  background-color: #fa34342f;
+  padding: 0.2rem 0.6rem;
+  color: var(--red);
+  font-weight: 500;
+  border-radius: 18px;
+}
+
+@media (min-width: 640px) {
+  .sale_clock {
+    width: 70%;
+  }
+
+  .sale {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sale_clock {
+    width: 300px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.8rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    padding: 3rem 0.8rem;
+    background-color: white;
+  }
+
+  .sale {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sale_clock__heading {
+    padding-bottom: 1rem;
+  }
+  .sale_clock__heading h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 0.4rem;
+  }
+
+  .sale_clock__heading h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-500);
+  }
+}
