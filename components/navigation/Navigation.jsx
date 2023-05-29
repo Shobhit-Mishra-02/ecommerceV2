@@ -14,6 +14,7 @@ import {
   FiX,
 } from "react-icons/fi";
 import "./navigation.css";
+import Image from "next/image";
 
 const SliderOptions = ({ toogleSlider }) => (
   <>
@@ -21,7 +22,7 @@ const SliderOptions = ({ toogleSlider }) => (
       <div className="slider_cross">
         <FiX onClick={toogleSlider} />
       </div>
-      <img src="/Avatar.png" alt="avatar" />
+      <Image src="/Avatar.png" alt="avatar" width={100} height={100} />
       <div>
         <button className="slider_login__btn">Sign in | Register</button>
       </div>

@@ -1,8 +1,9 @@
 import "./saleSection.css";
+import Image from "next/image";
 
 const Card = () => (
   <div className="sale_card">
-    <img src="/tShirt.png" alt="image" />
+    <Image src="/tShirt.png" alt="image" width={200} height={200} />
 
     <h5>T-shirt</h5>
     <div>

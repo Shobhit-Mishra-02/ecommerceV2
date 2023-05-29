@@ -1,4 +1,5 @@
 import "./header.css";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -15,9 +16,9 @@ const Header = () => {
         <div className="right_section">
           <div className="right_login">
             <div className="right_login__upper">
-              <img src="Avatar.png" alt="avatar" />
+              <Image src="/Avatar.png" alt="avatar" width={200} height={200} />
               <h4 className="">
-                Hi, user <span>let's get started</span>
+                Hi, user <span>let&apos;s get started</span>
               </h4>
             </div>
             <div className="right_section_btn">
