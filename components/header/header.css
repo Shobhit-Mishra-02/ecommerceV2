@@ -64,6 +64,11 @@
   padding-bottom: 1rem;
 }
 
+.right_login__upper img {
+  height: auto;
+  width: 3.2rem;
+}
+
 .right_login__upper h4 {
   font-weight: 400;
 }

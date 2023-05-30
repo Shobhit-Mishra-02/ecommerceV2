@@ -1,90 +1,91 @@
-.horizontalCards{
-    border: 1px solid var(--gray-300);
-    width: 50rem;
-    height: 10rem;
-    /* max-height: 10rem; */
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 6px;
-    background-color: white;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    border-radius: 5px;
+.horizontalCards {
+  border: 1px solid var(--gray-300);
+  width: 50rem;
+  height: 10rem;
+  /* max-height: 10rem; */
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
 }
-.horizontalCardImg{
-    width: 30rem;
-    aspect-ratio: 1/1;
+.horizontalCardImg {
+  width: 30rem;
+  height: auto;
+  /* aspect-ratio: 1/1; */
 }
-.horizontalCardsDetails{
-    text-align: justify;
-    margin: 0rem 1.5rem;
-    align-self: center;
+.horizontalCardsDetails {
+  text-align: justify;
+  margin: 0rem 1.5rem;
+  align-self: center;
 }
-.horizontalCardName{
-    
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.horizontalCardName {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
-.horizontalCardPrices{
-    font-size: 1.5rem;
-    font-weight: 800;
+.horizontalCardPrices {
+  font-size: 1.5rem;
+  font-weight: 800;
 }
-.horizontalCardActualPrice{
-    font-size: 1rem;
-    align-self: center;
-    color: var(--gray-500);
-    font-weight: 400;
+.horizontalCardActualPrice {
+  font-size: 1rem;
+  align-self: center;
+  color: var(--gray-500);
+  font-weight: 400;
 }
-.horizontalCardReview{
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0px;
+.horizontalCardReview {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
 }
-.horizontalCardOneStar{
-    width: 0.75rem;
-    aspect-ratio: 1/1;
+.horizontalCardOneStar {
+  width: 0.75rem;
+  height: auto;
+  /* aspect-ratio: 1/1; */
 }
-.horizontalCardRating{
-    color: #FF9017;
-    font-size: 1rem;
-    margin-left: 2px;
+.horizontalCardRating {
+  color: #ff9017;
+  font-size: 1rem;
+  margin-left: 2px;
 }
-.horizontalCardDot{
-    aspect-ratio: 1/1;
-    width: 0.3rem;
-    height: 0.3rem;
-    align-self: center;
-    margin: 0px 5px;
+.horizontalCardDot {
+  aspect-ratio: 1/1;
+  width: 0.3rem;
+  height: 0.3rem;
+  align-self: center;
+  margin: 0px 5px;
 }
-.horizontalCardOrders{
-    color: var(--gray-500);
-    font-size: 0.75rem;
-    align-self: center;
+.horizontalCardOrders {
+  color: var(--gray-500);
+  font-size: 0.75rem;
+  align-self: center;
 }
-.horizontalCardShipping{
-    color: #00B517;
-    font-weight: 500;
-    font-size: 0.9rem;
-    align-self: center;
+.horizontalCardShipping {
+  color: #00b517;
+  font-weight: 500;
+  font-size: 0.9rem;
+  align-self: center;
 }
-.horizontalCardDescription{
-    font-size: 0.8rem;
+.horizontalCardDescription {
+  font-size: 0.8rem;
 }
-.horizontalCardHeartDiv{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border: 1px solid var(--gray-300);
-    width: 2rem;
-    height: 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
+.horizontalCardHeartDiv {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid var(--gray-300);
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
 }
-.horizontalCardHeart{
-    width: 1rem;
-    height: 1rem;
+.horizontalCardHeart {
+  height: auto;
+  width: 1rem;
 }

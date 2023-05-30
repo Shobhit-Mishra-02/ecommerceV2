@@ -1,16 +1,25 @@
 import "./horizontalCards.css";
+import Image from "next/image";
 
 export default function horizontalCards() {
   return (
     <div className="horizontalCards">
       <div className="horizontalCardHeartDiv">
-        <img
+        <Image
           className="horizontalCardHeart"
-          src="./unfilledheart.png"
+          src="/unfilledheart.png"
           alt="heart"
+          width={100}
+          height={100}
         />
       </div>
-      <img className="horizontalCardImg" src="/iphone.png" alt="a" />
+      <Image
+        className="horizontalCardImg"
+        src="/iphone.png"
+        alt="a"
+        width={100}
+        height={100}
+      />
       <div className="horizontalCardsDetails">
         <div className="horizontalCardName">
           Canon Cmera EOS 2000, Black 10x zoom
@@ -23,36 +32,58 @@ export default function horizontalCards() {
         </div>
         <div className="horizontalCardReview">
           <div className="horizontalCardStar">
-            <img
-              className="horizontalCardOneStar"
-              src="./coloredstar.png"
-              alt="star"
-            />
-            <img
-              className="horizontalCardOneStar"
-              src="./coloredstar.png"
-              alt="star"
-            />
-            <img
+            <Image
               className="horizontalCardOneStar"
               src="/coloredstar.png"
               alt="star"
+              width={10}
+              height={10}
             />
-            <img
+            <Image
               className="horizontalCardOneStar"
-              src="./coloredstar.png"
+              src="/coloredstar.png"
               alt="star"
+              width={10}
+              height={10}
             />
-            <img
+            <Image
               className="horizontalCardOneStar"
-              src="./coloredstar.png"
+              src="/coloredstar.png"
               alt="star"
+              width={10}
+              height={10}
+            />
+            <Image
+              className="horizontalCardOneStar"
+              src="/coloredstar.png"
+              alt="star"
+              width={10}
+              height={10}
+            />
+            <Image
+              className="horizontalCardOneStar"
+              src="/coloredstar.png"
+              alt="star"
+              width={10}
+              height={10}
             />
             <span className="horizontalCardRating">7.5</span>
           </div>
-          <img src="/dot.png" alt="dot" className="horizontalCardDot" />
+          <Image
+            src="/dot.png"
+            alt="dot"
+            className="horizontalCardDot"
+            width={10}
+            height={10}
+          />
           <div className="horizontalCardOrders">154 orders</div>
-          <img src="/dot.png" alt="dot" className="horizontalCardDot" />
+          <Image
+            src="/dot.png"
+            alt="dot"
+            className="horizontalCardDot"
+            height={10}
+            width={10}
+          />
           <div className="horizontalCardShipping">Free Shipping</div>
         </div>
         <div className="horizontalCardDescription">
