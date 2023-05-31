@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div>
       {/* <SmallCard /> */}
+      {/* <HorizontalCards /> */}
       <Header />
       <SaleSection />
-      <HorizontalCards />
       <Recommendation />
     </div>
   );
