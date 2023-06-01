@@ -1,0 +1,107 @@
+.sectionInquiry{
+    background: linear-gradient(94.99deg, #2C7CF1 7.19%, rgba(0, 209, 255, 0.5) 89.49%);
+    display: flex;
+    height: 25rem;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.sectionInquiryImage{
+    position: absolute;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+}
+.sectionInquiryText{
+    height: auto;
+    max-width: 50%;   
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.sectionInquiryText>*{
+    width: 70%;
+    margin: 0.75rem;
+}
+.sectionInquiryUpperText{
+    font-size: 2rem;
+}
+.sectionInquiryForm{
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    z-index: 2;
+    border-radius: 10px;
+}
+.sectionInquiryForm>*{
+    height: 15%;
+}
+.sectionInquiryForm>h4{
+    font-size: 1.25rem;
+}
+.sectionInquiryForm>input,.sectionInquiryForm>div>input,.sectionInquiryForm>textarea{ 
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    padding-left: 0.4rem ;
+}
+.sectionInquiryForm>textarea{
+    resize:vertical;
+    max-height: 40%;
+    min-height: 15%;
+}
+.sectionInquiryForm>div>input{
+    width: 40%;
+    height: 80%;
+}
+.sectionInquiryType{
+    height: 30%;
+    text-align:left;
+}
+.sectionInquiryButton{
+    padding: 0rem 1rem;
+    background-color: #127FFF;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: max-content;
+    height: 2rem;
+}
+.sectionInquiryDropDown>select{
+    margin-left: 1rem;
+    height: 80%;
+    width: 5rem;
+    border: 1px solid var(--gray-300);
+}
+@media (max-width: 639px) {
+    .sectionInquiry{
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .sectionInquiryUpperText{
+        font-size: 2rem;
+    }
+    .sectionInquiryText{
+        max-width: 100%;
+        align-items: center;
+        margin: 0.5rem;
+        height: auto;
+        width: 100%;
+    }
+    .sectionInquiryForm{
+        max-width: 100%;
+        width: 80%;
+        margin: 1rem;
+        height: 50vh;
+    }
+    .sectionInquiryForm>h4{
+        font-size: 1.75rem;
+    }
+  }
