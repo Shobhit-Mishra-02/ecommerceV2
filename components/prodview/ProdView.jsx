@@ -76,7 +76,7 @@ const ProductView = () => {
               <h4 className="prod_title">Product name goes here</h4>
               <span className="prod_price">$129.95</span>
               <div className="prod_btn__section">
-                <button className="prod_btn">Send inquiry</button>
+                <button className="btn-primary-expand">Send inquiry</button>
                 <button className="prod_btn__heart">
                   <FiHeart />
                 </button>

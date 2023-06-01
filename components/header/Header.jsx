@@ -22,7 +22,7 @@ const Header = () => {
               </h4>
             </div>
             <div className="right_section_btn">
-              <button className="right_btn__join">Join now</button>
+              <button className="btn-primary-expand">Join now</button>
               <button className="right_btn__login">Logn in</button>
             </div>
           </div>

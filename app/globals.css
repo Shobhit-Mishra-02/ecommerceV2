@@ -37,6 +37,29 @@ body {
   padding: 0rem 0.4rem;
 }
 
+.btn-primary,
+.btn-primary-expand {
+  padding: 8px 38px;
+  font-size: 1rem;
+  font-weight: 400;
+
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary-expand {
+  padding: 8px 24px;
+  width: 100%;
+}
+
+.btn-primary-expand:hover,
+.btn-primary:hover {
+  background-color: #2e80fb;
+}
+
 @media (min-width: 640px) {
   .container {
     padding: 0rem 1rem;

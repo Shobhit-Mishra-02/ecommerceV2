@@ -19,7 +19,13 @@ export default function Newsletter() {
               required
             />
           </div>
-          <button type="submit" className="newsletterButton">
+          <button
+            type="submit"
+            style={{
+              marginLeft: "1rem",
+            }}
+            className="btn-primary"
+          >
             Subscribe
           </button>
         </form>
