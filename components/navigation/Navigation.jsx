@@ -61,7 +61,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="navbar_options">
         <div className="navbar_options__left">
-          <FiMenu onClick={toogleSlider} />
+          <FiMenu className="navbar_menu__svg" onClick={toogleSlider} />
           <span>Brand</span>
         </div>
 
