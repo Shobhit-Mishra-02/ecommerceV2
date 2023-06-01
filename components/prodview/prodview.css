@@ -1,7 +1,7 @@
 .prodview {
   padding-top: 3rem;
   background-color: white;
-  margin-top: 1rem;
+  margin: 2rem 0rem;
   border-radius: 5px;
   border: 1px solid var(--gray-300);
   padding: 0.6rem;
@@ -43,6 +43,7 @@
   max-width: 460px;
 }
 .prod_desc {
+  width: fit-content;
   padding-bottom: 1rem;
 }
 
@@ -212,4 +213,74 @@
 .supplier_info h3 {
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* supplier location desigin  */
+.supplier_desc__location {
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.supplier_country,
+.supplier_verify,
+.supplier_shipping {
+  color: var(--gray-600);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.supplier_country svg,
+.supplier_verify svg,
+.supplier_shipping svg {
+  height: auto;
+  width: 1.2rem;
+}
+
+.prodview_display,
+.prod_desc,
+.supplier_desc {
+  margin: auto;
+}
+
+/* responsive design  */
+
+@media (min-width: 1024px) {
+  .prod_content {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .supplier_desc {
+    width: 260px;
+    margin-top: 0px;
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  .supplier_desc__location {
+    flex-direction: column;
+  }
+  .supplier_country,
+  .supplier_verify,
+  .supplier_shipping {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .prodview {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .prod_desc {
+    border-left: 1px solid var(--gray-300);
+    padding-left: 1rem;
+  }
 }
