@@ -6,10 +6,12 @@ const Header = () => {
     <div className="container">
       <div className="header">
         <div className="header_banner">
-          <h2 className="header_banner__heading">
-            Latest trending <span>Electronic items</span>
-          </h2>
-          <button className="header_banner__btn">Learn more</button>
+          <div>
+            <h2 className="header_banner__heading">
+              Latest trending <span>Electronic items</span>
+            </h2>
+            <button className="header_banner__btn">Learn more</button>
+          </div>
         </div>
 
         {/* login section  */}
